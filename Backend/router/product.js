@@ -4,7 +4,7 @@ const {productModel}=require("../model/probuct.model")
 const {CartModel}=require("../model/cart.model")
 const {babyproduct}=require("../product")
 
-
+// post
 productRoute.post("/post",async(req,res)=>{
     try {
         let data= await productModel.insertMany(babyproduct)
